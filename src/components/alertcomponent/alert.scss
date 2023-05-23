@@ -1,0 +1,36 @@
+.alert-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    width: 400px;
+    height: 400px;
+    background-color: rgba(31, 26, 43, 0.9);
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 10px;
+   
+    
+  .alert-box {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    p{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+    h3{
+        text-align: center;
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  }
+  

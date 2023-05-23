@@ -1,0 +1,49 @@
+.loginpagecontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.loginimage{
+    background-color: rgba(27, 29, 50, 0.966);
+    border-radius: 40px;
+}
+.loginform  {
+h1{
+    color: rgb(241, 239, 239);
+    text-align: left;
+    margin-bottom: 40px;
+}
+input{
+    margin: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    color: rgb(222, 222, 222);
+    ::placeholder{
+        color:white
+    }
+
+
+}
+}
+.logininput{
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding-left:10px ;
+    }
+    .loginsubmitbutton button{
+        background-color: rgb(82, 82, 242);
+        width: 100%;
+        padding: 10px;
+        border: none;
+        color: aliceblue;
+        border-radius: 10px;
+    }

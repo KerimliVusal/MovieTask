@@ -1,0 +1,44 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+  
+    h1{
+        color: aliceblue;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-family: cursive;
+     
+    }
+    .dashboarddata{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        p{ 
+            background-color: #121829;
+            text-align: center;
+            color: rgb(216, 216, 216);
+            padding: 10px;
+            margin: 10px;
+            padding: 20px;
+        }
+    }
+    .dashboardlinks{
+        p{ 
+            background-color: #121829;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            padding: 20px;
+            color:#7B6EF6;
+        }
+       
+    }
+    h2{
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+}

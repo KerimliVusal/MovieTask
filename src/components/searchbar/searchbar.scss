@@ -1,0 +1,31 @@
+.searchbarinput input{
+  width: 250px;
+  padding: 5px;
+  text-align: left;
+  overflow: hidden;
+outline: none;
+background: none;
+border: none;
+color: rgb(183, 182, 182);
+}
+.searchbaricon{
+  border: none;
+  background: none;
+  fill: rgb(112, 105, 105);
+  margin-left: 10px;
+}
+.searchbarcontainer{
+  border: 1px solid rgb(114, 114, 114);
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(28, 28, 58);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  ::placeholder{
+    font-size: 14px;
+  }
+ 
+}
