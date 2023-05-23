@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/MovieTask/static/css/main.de965454.css",
+    "main.js": "/MovieTask/static/js/main.efbb4f0b.js",
+    "static/js/787.d71c8db9.chunk.js": "/MovieTask/static/js/787.d71c8db9.chunk.js",
+    "static/media/login.svg": "/MovieTask/static/media/login.75415834c8d14c4382f7df4bde84acb9.svg",
+    "static/media/load2.gif": "/MovieTask/static/media/load2.143e22861e57b842ef8a.gif",
+    "static/media/error.svg": "/MovieTask/static/media/error.8b5dae9f05d770a2009b5d4d524629e2.svg",
+    "static/media/logo.svg": "/MovieTask/static/media/logo.b8130fa711cd42e7ad35c79db34e4416.svg",
+    "static/media/like.svg": "/MovieTask/static/media/like.dad5bc3c38bb7c091d9cbd2327f5490d.svg",
+    "index.html": "/MovieTask/index.html",
+    "main.de965454.css.map": "/MovieTask/static/css/main.de965454.css.map",
+    "main.efbb4f0b.js.map": "/MovieTask/static/js/main.efbb4f0b.js.map",
+    "787.d71c8db9.chunk.js.map": "/MovieTask/static/js/787.d71c8db9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de965454.css",
+    "static/js/main.efbb4f0b.js"
+  ]
+}
