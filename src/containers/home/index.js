@@ -27,30 +27,7 @@ function Home() {
     setAddnewItems(alldata);
   }, [alldata]);
 
-  const scrolltop = () => {
-    window.scrollTo(0, 0);
-  }
-  const PrevPage = (e) => {
-    e.preventDefault();
-    if (Currentpage > 1) {
-      SetCurrentpage(Currentpage - 1);
-    }
-    scrolltop();
-  }
-
-  const NextPage = (e) => {
-    e.preventDefault();
-    if (Currentpage) {
-      SetCurrentpage(Currentpage + 1);
-    }
-    scrolltop();
-  }
-
-  const ChangePage = (e, number) => {
-    e.preventDefault();
-    SetCurrentpage(number);
-    scrolltop();
-  }
+ 
   const onChange = ({ target: { value } }) => {
     setValue(value)
     dispatch(apidatatype(value))
@@ -87,7 +64,7 @@ function Home() {
           className='customradio'
         />
       </div>
-      <p>Total item:{addnewItems && addnewItem?.length ? addnewItems?.length : 0}</p>
+      <p>Total item:{addnewItems ? addnewItems.length : datas.length}</p>
       <div className="row justify-content-around ">
         {addnewItems?.length == 0 ?
           <div style={{ textAlign: 'center' }}><h1>Sorry, couldn't find! 😥</h1></div> :
