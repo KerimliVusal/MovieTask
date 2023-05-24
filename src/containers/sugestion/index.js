@@ -1,7 +1,6 @@
 import SearchBar from "../../components/searchbar"
 import '../sugestion/sugestion.scss'
 import { Button } from 'antd'
-import { PoweroffOutlined } from '@ant-design/icons';
 import { useEffect, useState } from "react";
 import Alert from "../../components/alertcomponent";
 import SuggestForm from "../../components/suggestform";
@@ -11,6 +10,7 @@ import Film from "../../components/films";
 const SugestionPage = () => {
   const [loadings, setLoadings] = useState([]);
   const [suggested, setSuggested] = useState(true);
+  const [notfound, setNotfound] = useState(false);
   const [addnewItem, setAddnewItem] = useState(null);
   const [total, setTotal] = useState([]);
   const [addnewItems, setAddnewItems] = useState([]);
@@ -25,6 +25,7 @@ const SugestionPage = () => {
     const newItem = alldata?.filter(item => (item.title?.toLowerCase().includes(addnewItem?.toLowerCase())) ||
       item.name?.toLowerCase().includes(addnewItem?.toLowerCase())
     )
+    setNotfound(true)
     setAddnewItems(newItem)
     setTotal(newItem.length)
     setLoadings((prevLoadings) => {
@@ -63,7 +64,7 @@ const SugestionPage = () => {
         ))
       }
     </div>
-    {addnewItem?.length == 0 && total == 0 || addnewItems?.length == 0 ? <NotFound /> : ''}
+    {addnewItems.length==0&& notfound ? <NotFound /> : ''}
    <Alert showAlert={showAlert} setShowAlert={setShowAlert} />
 
     <div className="suggestmaually">
