@@ -1,3 +1,10 @@
+$container-width:1170px;
+$Page_Title_size:64px;
+$Page_padding:80px;
+$BreadCrumb_color:#BEB7FB;
+$Default_color:#a8aebf;
+$Detail-title-color:#EBEEF5;
+$DetailPage_margin:80px;
 .cart-item{
     background-color: #1b2134cc;
     border: none;
@@ -26,5 +33,24 @@
 #whached{
   visibility: hidden;
   display: flex;
-  margin-left: 10px;
+ position: absolute;
+ bottom: -10px;
+ left: 30px;
 }
+@mixin Myflex($jcontent,$direction){
+  display: flex;
+  justify-content: $jcontent;
+  align-items:center;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+}
+
+.MovieCard-text {
+  @include Myflex(space-between, row);
+  padding: 24px 16px;
+
+  .Movie-title {
+    color: $Default_color;
+    width: 94%;
+  }}
+ 

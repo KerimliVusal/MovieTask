@@ -6,21 +6,9 @@ import SearchBar from '../../components/searchbar'
 import { useSelector } from 'react-redux'
 
 function MoviesPage() {
-  const [Currentpage, SetCurrentpage] = useState(1)
   const data = useSelector(state => state.apidata['movie'])
   const [addnewItem, setAddnewItem] = useState([])
   const [addnewItems, setAddnewItems] = useState([])
-
-  const scrolltop = () => {
-    window.scrollTo(0, 0);
-  }
-
-
-  const ChangePage = (e, number) => {
-    e.preventDefault();
-    SetCurrentpage(number);
-    scrolltop();
-  }
 
   useEffect(() => {
     setAddnewItems(data);
@@ -40,7 +28,7 @@ function MoviesPage() {
         {data &&
           addnewItems.map((item, index) => (
             <div className='col-md-3' key={index}>
-              <Film item={item} Currentpage={Currentpage} title={item.title} />
+              <Film item={item}  title={item.title} />
             </div>
           ))
         }

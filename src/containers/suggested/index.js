@@ -17,7 +17,7 @@ function Suggested() {
         </div>
       <p style={{padding:'10px'}}>{`Total item: ${alldata?.length}`}</p>
     <div className="row justify-content-around ">
-    { 
+    { alldata&&
      alldata?.map((item,index)=>(
       <div className='col-md-3' key={index}>
        <Film item={item}  title={item.title} suggested={suggested} addtomylist={addtomylist}/>
