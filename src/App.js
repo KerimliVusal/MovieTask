@@ -72,7 +72,7 @@ function App() {
         <Route path='/containers/sugestion'  element={<SugestionPage/>}/>
         <Route path='/containers/sugested'   element={<Suggested/>}  />
         <Route path='/containers/detail/:type/:id' element={<DetailPage/>}/>
-        <Route path="*" element={<ErrorPage/>} />
+        {/* <Route path="*" element={<ErrorPage/>} /> */}
       </Routes>
       </>}
     </div>
