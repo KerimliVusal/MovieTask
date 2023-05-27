@@ -1,12 +1,13 @@
 import React from "react";
-import "../cart/cart.scss";
 import { Link } from "react-router-dom";
 import HeartIcon from "../icon/hearticon";
 import WatchlistIcon from "../icon/saveicon";
-function Card({ movie}) {
+import "../cart/cart.scss";
+
+function Card({ movie }) {
   return (
     <div className="MovieCard">
-      <Link to={ `/containers/detail/${movie.name?'tv':'movie'}/${movie.id}`}className="MovieCard-img">
+      <Link to={`/containers/detail/${movie.name ? 'tv' : 'movie'}/${movie.id}`} className="MovieCard-img">
         <span className="star">
           <i className="fa-regular fa-star"></i>
           {Number(movie.vote_average).toFixed(1)}

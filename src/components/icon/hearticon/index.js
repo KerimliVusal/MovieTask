@@ -6,13 +6,13 @@ import { dislikemessage, likedmessage } from "../../../utils";
 function HeartIcon({ movie }) {
   const dispatch = useDispatch();
   const wishlist = useSelector((state) => state.apidata.wishlistdata);
-  const handlelike=(movie)=>{
+  const handlelike = (movie) => {
     dispatch(Addwishlist(movie))
-    const f=wishlist?.find((watchFilm) => watchFilm.id === movie.id)
-    if(f){
+    const f = wishlist?.find((watchFilm) => watchFilm.id === movie.id)
+    if (f) {
       dislikemessage()
     }
-    else{
+    else {
       likedmessage()
     }
   }

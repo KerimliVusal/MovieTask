@@ -1,9 +1,8 @@
-import React from 'react'
-import Film from '../../components/films'
-import { useState, useEffect } from 'react'
-import '../movies/movies.scss'
-import SearchBar from '../../components/searchbar'
+import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import Film from '../../components/films'
+import SearchBar from '../../components/searchbar'
+import '../movies/movies.scss'
 
 function MoviesPage() {
   const data = useSelector(state => state.apidata['movie'])
@@ -28,7 +27,7 @@ function MoviesPage() {
         {data &&
           addnewItems.map((item, index) => (
             <div className='col-md-3' key={index}>
-              <Film item={item}  title={item.title} />
+              <Film item={item} title={item.title} />
             </div>
           ))
         }

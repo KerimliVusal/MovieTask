@@ -1,13 +1,12 @@
-import React, { useMemo } from 'react'
-import Film from '../../components/films'
-import Pagination from '../../components/pagination'
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import '../home/home.scss'
-import SearchBar from '../../components/searchbar'
-import { Radio } from 'antd'
+import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchMovies, apidatatype } from '../../store/storeslices'
+import { apidatatype } from '../../store/storeslices'
+import { Radio } from 'antd'
+import Film from '../../components/films'
+import SearchBar from '../../components/searchbar'
+import '../home/home.scss'
+
+
 
 function Home() {
   const [valuetype, setValue] = useState('alldata');
@@ -27,7 +26,7 @@ function Home() {
     setAddnewItems(alldata);
   }, [alldata]);
 
- 
+
   const onChange = ({ target: { value } }) => {
     setValue(value)
     dispatch(apidatatype(value))

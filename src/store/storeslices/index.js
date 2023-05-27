@@ -6,13 +6,13 @@ let wishlistarray = JSON.parse(localStorage.getItem("likeddata"))
 let watchlistarray = JSON.parse(localStorage.getItem("saveddata"))
   ? JSON.parse(localStorage.getItem("saveddata"))
   : [];
-  let addlist = JSON.parse(localStorage.getItem("addedlist"))
+let addlist = JSON.parse(localStorage.getItem("addedlist"))
   ? JSON.parse(localStorage.getItem("addedlist"))
   : [];
-  let sugestlist = JSON.parse(localStorage.getItem("sugestlist"))
+let sugestlist = JSON.parse(localStorage.getItem("sugestlist"))
   ? JSON.parse(localStorage.getItem("sugestlist"))
   : [];
- 
+
 
 
 export const fetchMovies = createAsyncThunk('movies/fetchMovies', async () => {
@@ -50,9 +50,9 @@ const initialState = {
   suggesteddata: sugestlist,
   manualdata: [],
   newitem: addlist,
-  suggestions:[],
-  watchlistdata: watchlistarray ,
-  wishlistdata: wishlistarray ,
+  suggestions: [],
+  watchlistdata: watchlistarray,
+  wishlistdata: wishlistarray,
   login: false,
   loading: false,
 }

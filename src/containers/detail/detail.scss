@@ -28,11 +28,11 @@ $DetailPage_margin:80px;
     position: relative;
     display: flex;
     justify-content: center;
-
     img {
       @include imgstyle;
       border-radius: 50px;
       height: 380px;
+      width: 90%;
 
     }
     
@@ -77,7 +77,6 @@ $DetailPage_margin:80px;
         font-size: 18px;
         line-height: 32px;
         color: $Default_color;
-        // margin-bottom: 24px;
       }
     }
     .icon_row {
@@ -88,7 +87,6 @@ $DetailPage_margin:80px;
         overflow: hidden;
         padding: 2px;
         @include Icons;
-        // margin-bottom: 24px;
         i {
           margin-right: 6px;
         }

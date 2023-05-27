@@ -1,12 +1,13 @@
-import SearchBar from "../../components/searchbar"
-import '../sugestion/sugestion.scss'
-import { Button } from 'antd'
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { Button } from 'antd'
+import SearchBar from "../../components/searchbar"
 import Alert from "../../components/alertcomponent";
 import SuggestForm from "../../components/suggestform";
 import NotFound from "../../components/suggestform/notfound";
-import { useSelector } from "react-redux";
 import Film from "../../components/films";
+import '../sugestion/sugestion.scss'
+
 const SugestionPage = () => {
   const [loadings, setLoadings] = useState([]);
   const [suggested, setSuggested] = useState(true);
@@ -42,11 +43,11 @@ const SugestionPage = () => {
     }, 1500);
 
   }
-  useEffect(()=>{
-    if(addnewItems.length>0&&addnewItem?.length>0){
+  useEffect(() => {
+    if (addnewItems.length > 0 && addnewItem?.length > 0) {
       setShowAlert(true)
     }
-  },[addnewItems])
+  }, [addnewItems])
   return (<div className='sugestionpage'>
     <h1>Suggest me</h1>
     <p>I will really appericiate it if you take time to suggest me something good to watch.</p>
@@ -64,8 +65,8 @@ const SugestionPage = () => {
         ))
       }
     </div>
-    {addnewItems.length==0&& notfound ? <NotFound /> : ''}
-   <Alert showAlert={showAlert} setShowAlert={setShowAlert} />
+    {addnewItems.length == 0 && notfound ? <NotFound /> : ''}
+    <Alert showAlert={showAlert} setShowAlert={setShowAlert} />
 
     <div className="suggestmaually">
       <h3>Didin’t find the one you looking for?</h3>

@@ -13,16 +13,17 @@
   position: relative;
  img{
   position: absolute;
-  left: 0;
-  top: 5px;
-  width: 70px;
+  left: 55px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
  }
 
     .menuUl {
       margin: 0;
       display: flex;
 justify-content: right;
-padding: 20px;
+padding: 20px 30px;
       li a {
         position: relative;
         display: inline-block;

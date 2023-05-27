@@ -2,12 +2,12 @@ import React from 'react'
 import '../pagination/pagination.scss'
 
 function Pagination(props) {
-  let pages=[];
-  for(let i=props.Currentpage-2;i<props.Currentpage+3;i++){
-    if(i<=0){
+  let pages = [];
+  for (let i = props.Currentpage - 2; i < props.Currentpage + 3; i++) {
+    if (i <= 0) {
       continue
     }
-    if(i>props.Totalpages){
+    if (i > props.Totalpages) {
       continue
     }
     pages.push(i);
@@ -17,23 +17,23 @@ function Pagination(props) {
       <nav >
         <ul className="pagination">
           <li className="page-item">
-            <a className="page-link" onClick={(e)=>props.PrevPage(e)} href="#" aria-label="Previous">
+            <a className="page-link" onClick={(e) => props.PrevPage(e)} href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
           {
-            pages.map(page=>(
-              <li className={page===props.Currentpage? "page-item active":"page-item"} key={page}><a className="page-link" onClick={(e)=>props.ChangePage(e,page)} href="#">{page}</a></li>
+            pages.map(page => (
+              <li className={page === props.Currentpage ? "page-item active" : "page-item"} key={page}><a className="page-link" onClick={(e) => props.ChangePage(e, page)} href="#">{page}</a></li>
             ))
           }
-       
+
           <li className="page-item">
-            <a className="page-link" onClick={(e)=>props.NextPage(e)} href="#" aria-label="Next">
+            <a className="page-link" onClick={(e) => props.NextPage(e)} href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
         </ul>
-    </nav>
+      </nav>
     </div>
   )
 }

@@ -1,7 +1,7 @@
-
-import '../searchbar/searchbar.scss'
+import { useSelector } from 'react-redux';
 import { SearcIcon } from '../icon';
-import {  useSelector } from 'react-redux';
+import '../searchbar/searchbar.scss'
+
 
 const SearchBar = ({ setAddnewItem, setAddnewItems = '', disableInputchage = false }) => {
   const type = useSelector(state => state.apidata.type)

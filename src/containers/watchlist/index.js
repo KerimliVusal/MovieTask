@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Row, Col } from "antd";
-import "../watchlist/watchlist.scss";
 import Card from "../../components/cart";
+import "../watchlist/watchlist.scss";
 function WatchlistPage() {
   const watchlist = useSelector((state) => state.apidata.watchlistdata);
   return (

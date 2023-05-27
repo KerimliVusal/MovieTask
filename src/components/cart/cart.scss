@@ -26,10 +26,11 @@ $DetailPage_margin:80px;
 }
 .MovieCard {
   position: relative;
-  background: rgba(32, 40, 62, 0.893);
+  background: rgba(32, 40, 62, 0.929);
   backdrop-filter: blur(80px);
   border-radius: 12px;
   transition: 0.4s;
+   margin-bottom: 25px;
 
   .heart {
     display: inline-block;
