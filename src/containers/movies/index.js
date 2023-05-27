@@ -15,7 +15,7 @@ function MoviesPage() {
 
 
   return (<div>
-    <div className="container">
+    <div className="containers">
       <div className='moviespagetitle'>
         <p >MaileHereko</p>
         <h1>

@@ -48,8 +48,8 @@ function Home() {
     },
   ];
 
-  return (<div>
-    <div className="container">
+  return (
+    <div className="containers">
       <h1>MovieDB</h1>
       <p>List of Movies and Tv Shows,I ,<span style={{ color: '#8e0274' }}>Pramod Paudel</span> have watche till date.Explore what i have watched and feel free to make a suggestion 😉</p>
       <SearchBar setAddnewItem={setAddnewItem} setAddnewItems={setAddnewItems} />
@@ -75,7 +75,6 @@ function Home() {
         }
       </div>
     </div>
-  </div>
 
   )
 }
