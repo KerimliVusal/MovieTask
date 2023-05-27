@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MovieTask/static/css/main.39cf8088.css",
-    "main.js": "/MovieTask/static/js/main.ca5ff0a6.js",
+    "main.css": "/MovieTask/static/css/main.83821f60.css",
+    "main.js": "/MovieTask/static/js/main.eb11c43c.js",
     "static/js/787.d71c8db9.chunk.js": "/MovieTask/static/js/787.d71c8db9.chunk.js",
     "static/media/login.svg": "/MovieTask/static/media/login.75415834c8d14c4382f7df4bde84acb9.svg",
     "static/media/load2.gif": "/MovieTask/static/media/load2.143e22861e57b842ef8a.gif",
@@ -9,12 +9,12 @@
     "static/media/like.svg": "/MovieTask/static/media/like.dad5bc3c38bb7c091d9cbd2327f5490d.svg",
     "index.html": "/MovieTask/index.html",
     "static/media/logo.svg": "/MovieTask/static/media/logo.b8130fa711cd42e7ad35c79db34e4416.svg",
-    "main.39cf8088.css.map": "/MovieTask/static/css/main.39cf8088.css.map",
-    "main.ca5ff0a6.js.map": "/MovieTask/static/js/main.ca5ff0a6.js.map",
+    "main.83821f60.css.map": "/MovieTask/static/css/main.83821f60.css.map",
+    "main.eb11c43c.js.map": "/MovieTask/static/js/main.eb11c43c.js.map",
     "787.d71c8db9.chunk.js.map": "/MovieTask/static/js/787.d71c8db9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39cf8088.css",
-    "static/js/main.ca5ff0a6.js"
+    "static/css/main.83821f60.css",
+    "static/js/main.eb11c43c.js"
   ]
 }
