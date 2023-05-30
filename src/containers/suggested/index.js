@@ -15,7 +15,7 @@ function Suggested() {
         <h1>
           Suggested</h1>
       </div>
-      <p style={{ padding: '10px' }}>{`Total item: ${alldata?.length}`}</p>
+      <p style={{ padding: '10px', color: '#fff' }}>{`Total item: ${alldata?.length}`}</p>
       <div className="row justify-content-around ">
         {alldata &&
           alldata?.map((item, index) => (
